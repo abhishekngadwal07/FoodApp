@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Successful</title>
+
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	background-color: #121212;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.container {
+	text-align: center;
+	background: #1e1e1e;
+	padding: 40px;
+	border-radius: 12px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	width: 350px;
+}
+
+.checkmark {
+	font-size: 70px;
+	color: #4CAF50;
+	margin-bottom: 20px;
+}
+
+h1 {
+	margin-bottom: 10px;
+	font-size: 26px;
+}
+
+p {
+	color: #bbb;
+	margin-bottom: 25px;
+}
+
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	padding: 12px 20px;
+	margin: 5px;
+	border-radius: 8px;
+	background-color: #ff4d4d;
+	color: white;
+	transition: 0.3s;
+}
+
+.btn:hover {
+	background-color: #e63e3e;
+}
+
+.secondary-btn {
+	background-color: #333;
+}
+
+.secondary-btn:hover {
+	background-color: #555;
+}
+
+.checkmark svg {
+	stroke-dasharray: 166;
+	stroke-dashoffset: 166;
+	animation: draw 1s ease forwards;
+}
+
+.checkmark path {
+	stroke-dasharray: 48;
+	stroke-dashoffset: 48;
+	animation: draw 0.6s ease forwards 0.8s;
+}
+
+
+@keyframes draw {to { stroke-dashoffset:0;
+	
+}
+}
+</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="checkmark">
+			<svg width="80" height="80" viewBox="0 0 52 52">
+        <circle cx="26" cy="26" r="25" fill="none" stroke="#4CAF50"
+					stroke-width="3" />
+        <path fill="none" stroke="#4CAF50" stroke-width="4"
+					d="M14 27 L22 35 L38 18" />
+    </svg>
+		</div>
+		<h1>Order Successful!</h1>
+		<p>
+			Your order has been placed successfully.<br> Thank you for
+			ordering with us.
+		</p>
+		
+		<form action="callingRestaurant">
+			  <button class="btn" type="submit">Go To Home</button>	
+		</form>
+
+		<!-- <a href="restaurant.jsp" class="btn">Go to Home</a>  -->
+		<!-- <a href="orders.html" class="btn secondary-btn">View Orders</a> -->
+	</div>
+
+</body>
+</html>
